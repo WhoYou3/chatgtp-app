@@ -52,10 +52,13 @@
   display: flex;
 }
 
-.gpt3__whatgpt3-feature .gpt3__features-container {
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
   margin: 0;
 }
-.gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
   max-width: 700px;
 }
 
@@ -64,17 +67,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   margin: 4rem 0 2rem;
 }
 
 .gpt3__whatgpt3-heading h1 {
-  font-family: var(--font-family);
   font-size: 34px;
   line-height: 45px;
   font-weight: 800;
+  font-family: var(--font-family);
   max-width: 510px;
-  margin-left: 1rem;
 }
+
 .gpt3__whatgpt3-heading p {
   font-family: var(--font-family);
   font-weight: 500;
@@ -88,7 +92,22 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
   margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container_feature-text {
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -104,11 +123,13 @@
 }
 
 @media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
   .gpt3__whatgpt3-feature .gpt3__features-container__feature {
     flex-direction: column;
   }
 
-  .gpt3__whatgpt3-feature .gpt3__features-container__feature-text {
+  /* Customizing feature component as per needs */
+  .gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
     margin-top: 0.5rem;
   }
 
@@ -119,6 +140,7 @@
 }
 
 @media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
   .gpt3__whatgpt3-container .gpt3__features-container__feature {
     margin: 1rem 0;
     min-width: 100%;
