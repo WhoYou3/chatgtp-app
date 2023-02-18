@@ -7,7 +7,13 @@ const Article = (props) => {
       <div className="gpt3__blog-container_article-image">
         <img src={props.imageUrl} alt="blog"></img>
       </div>
-      <div className="gpt3__blog-container_article-content"></div>
+      <div className="gpt3__blog-container_article-content">
+        <div>
+          <p>{props.date}</p>
+          <h3>{props.title}</h3>
+        </div>
+        <p>Read full article</p>
+      </div>
     </div>
   );
 };
